@@ -1,0 +1,17 @@
+app-drawer{
+    display: none ;
+}
+.divider{
+    hr{
+        border-top: 5px solid #bbb;
+    }
+   
+}
+@media screen and (max-width: 560px){
+    app-drawer{
+        display: block;
+    }
+    app-header{
+        display: none;
+    }
+}

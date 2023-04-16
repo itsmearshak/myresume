@@ -1,0 +1,55 @@
+.home-container {
+    min-height: calc(100vh - 100px);
+
+    min-width: 100%;
+    background-color: #36CC7C;
+    display: flex;
+    position: relative;
+
+    .intro-text {
+        width: 60%;
+        top: 100px;
+        justify-self: right;
+        font-size: 1.5em;
+        object-fit: contain;
+
+        position: absolute;
+        text-align: justify;
+        left: 30px;
+
+
+
+    }
+
+    .image-container {
+        position: absolute;
+        right: 0;
+        
+        top: 100px;
+        width: 40%;
+
+        img {
+            position: absolute;
+            border-left: 10px solid white;
+            border-top: 10px solid white;
+            border-bottom: 10px solid white;
+            right: 0;
+            width: 50%;
+            object-fit: contain;
+        }
+    }
+
+    @media screen and (max-width :950px) {
+        .intro-text {
+            width: calc(100% - 40px);
+            padding-right: 10px;
+            top: 5px;
+        }
+
+        .image-container {
+            display: none;
+        }
+
+    }
+
+}
